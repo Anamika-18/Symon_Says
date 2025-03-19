@@ -1,0 +1,101 @@
+ body{
+    background-color: #121212;
+    color: whitesmoke;
+ }
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align:center;
+    animation: move 5s infinite ease-in;
+    /* box-shadow: 0 0 10px 5px white; */
+    position: static; 
+ }
+ @keyframes move {
+    0%  { 
+        font-weight: 600;
+    }
+    50% {
+        box-shadow: 0 0 10px 5px #c2b1ae;
+    }
+    75%{
+        box-shadow: 0 0 1px 2px #c2b1ae;
+    }
+    100% { 
+        font-weight: 600;
+        transform: scale(1.2);
+    }
+ }
+ @keyframes move2{
+    0% , 100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+ }
+ .invite{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #c2b1ae;
+    animation: bounce 1s infinite ease-in-out;
+ }
+ @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+.one{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 20%;
+    margin: 6px 3px 3px 6px ;
+    box-shadow: 0 0 10px 5px rgb(133, 93, 93);
+    background-color: #dabdd2;
+}
+.two{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 20%;
+    margin: 6px 3px 3px 6px ;
+    box-shadow: 0 0 10px 5px rgb(133, 93, 93);
+    background-color:  #FFB8E0;
+}
+.three{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 20%;
+    margin: 6px 3px 3px 6px ;
+    position: relative;
+    bottom: 1.5rem;
+    box-shadow: 0 0 10px 5px rgb(133, 93, 93);
+   background-color:  #EC7FA9;
+}
+.four{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 20%;
+    margin: 6px 3px 3px 6px ;
+    position: relative;
+    bottom: 1.5rem;
+    box-shadow: 0 0 10px 5px rgb(133, 93, 93);
+   background-color: #BE5985;
+}
+.main{
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 1rem;
+}
+p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.flash{
+    background-color: white;
+}
